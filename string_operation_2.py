@@ -9,8 +9,7 @@ While normalizing your text, you noticed that one
    splitting the string and joining it back again without the commas.
 
 """
-movie = " the film,however,is all good<\i>"
-
+movie = " the film,however,is all good<\i> "
 
 movie_tag = movie.rstrip("<\i>")
 
@@ -19,7 +18,6 @@ print(movie_tag)
 movie_no_comma = movie_tag.split(",")
 
 print(movie_no_comma)
-
 
 movie_join = " ".join(movie_no_comma)
 
